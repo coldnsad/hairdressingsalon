@@ -1,9 +1,14 @@
 * {margin: 0; padding: 0}
 
-body {margin-top: 5px;}
+/* body {
+    margin-top: 5px;
+} */
+
+html, body {overflow-y:hidden}
 
 nav div{
     height: 60px;
+    /* height: 20%; */
     text-align: center;
     font-family: Helvetica, Arial, sans-serif;
     color: #ffff;
@@ -58,6 +63,7 @@ nav div{
 
 main div{
     height: 719px;
+    /* height: 70%; */
 }
 
 .main-left{
@@ -174,7 +180,8 @@ div.logo-right img {
 }
 
 footer div{
-    height: 110px;    
+    height: 110px;
+    /* height: 15%; */
 }
 
 .footer-left{
@@ -217,6 +224,10 @@ footer div{
 
 .footer-center-text{
     color: #ffff;
+}
+
+.clearfix{
+    clear: both;
 }
     
 

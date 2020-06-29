@@ -1,23 +1,28 @@
 <?php
-<?php
 require_once 'functions.php';
 
 $error = '';
-if (isset($_POST['username']) &&
+if (isset($_POST['name']) &&
+    isset($_POST['surname']) &&
+    isset($_POST['username']) &&
     isset($_POST['password']))
-{        
+{
+        
+        $name = sanitizeString($_POST['name']);
+        $surname = sanitizeString($_POST['surname']);
         $username = sanitizeString($_POST['username']);
         $password = sanitizeString($_POST['password']);
 
-        if ($username == '' ||
+        if ($name == '' ||
+            $surname == '' ||
+            $username == '' ||
             $password == '') 
             {
                 $error = 'Заполните все поля';
             }
         else
         {
-            //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-                $result = queryMysql("SELECT username, password FROM users WHERE username='$username'");
+                $result = queryMysql("SELECT * FROM hairdressingsalon WHERE username='$username'");
             if ($result->num_rows) $error = 'Пользователь с таким логином уже существует';
             else
             {
@@ -39,9 +44,12 @@ if (isset($_POST['username']) &&
                 <div class="form">
                     <input type='button' onclick='toHome();' value='На главную'>
                     <form method='POST' action='registration.php'>
-                        Введите логин: <input type='text' name='username'><br>
-                        Введите пароль: <input type='text' name='password'><br><br>
-                        <input type="submit" value="Войти"><br><br>
+                        Имя: <input type='text' name='name'><br>
+                        Фамилия: <input type='text' name='surname'><br>
+                        Логин: <input type='text' name='username'><br>
+                        Пароль: <input type='text' name='password'><br><br>
+                        <input type="submit" value="Регистрация"><br><br>
+                        <h2>$error</h2>
                     </form>
                 </div>
             </body>
@@ -49,5 +57,4 @@ if (isset($_POST['username']) &&
     _REGISTERFORM;
 
     
-?>
 ?>

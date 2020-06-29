@@ -1,0 +1,14 @@
+html, body {overflow-y:hidden}
+
+.form{
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+    position: absolute;
+    left: 500px;
+    top: 250px;
+}
+form{
+    margin-top: 35%;
+    margin-left: 25%;
+}

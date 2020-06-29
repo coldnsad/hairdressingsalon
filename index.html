@@ -5,7 +5,6 @@
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel='stylesheet' href='/HairdressingSalon/styles/styles.css' type='text/css'>
         <script src="/HairdressingSalon/redirect.js"></script>
-        <script src="/HairdressingSalon/redirect.js"></script>
         <!-- <script src='/HairdressingSalon/jquery/jquery-2.2.4.min.js'></script>
         <script src='/HairdressingSalon/jquery/jquery.mobile-1.4.5.min.js'></script> -->
         <title>Vogue</title>
@@ -18,8 +17,8 @@
                     <div class="left">Наши услуги</div>
                     <div class="center">Наши специалисты</div>
                     <div class="right">
-                        <button class="enter" onclick="redirect();">Войти</button>
-                        <button class="register">Регистрация</button>
+                        <button class="enter" onclick="redirectToEnter();">Войти</button>
+                        <button class="register" onclick="redirectToRegistration();">Регистрация</button>
                     </div>
                 </div>
             </nav>
@@ -84,6 +83,7 @@
                     <p class="center-text footer-center-text">Запись по телефону или в личном кабинете</p>
                 </div>
                 <div class="right footer-right"></div>
+                <div class="clearfix"></div>
             </div>
         </footer>
     </body>

@@ -1,5 +1,4 @@
 <?php
-<?php
 require_once 'functions.php';
 
 $error = '';
@@ -17,7 +16,7 @@ if (isset($_POST['username']) &&
         else
         {
             //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-                $result = queryMysql("SELECT username, password FROM users WHERE username='$username'");
+                $result = queryMysql("SELECT username FROM users WHERE username='$username'");
             if ($result->num_rows) $error = 'Пользователь с таким логином уже существует';
             else
             {
@@ -49,5 +48,4 @@ if (isset($_POST['username']) &&
     _REGISTERFORM;
 
     
-?>
 ?>

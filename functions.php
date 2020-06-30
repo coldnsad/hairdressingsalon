@@ -30,4 +30,43 @@
       $var = stripslashes($var);
     return $connection->real_escape_string($var);
   }
+
+  function getTable()
+  {
+    $days = [1,2,3,4,5,6,7];
+    $data = '<select  id="data-cells" onChange = "selected();">
+                <option>Услуга 1</option>
+                <option>Услуга 2</option>
+                <option>Услуга 3</option>
+              <select>';
+    $table = "<!DOCTYPE html>
+    <html>
+        <head>
+            <link rel='stylesheet' href='/HairdressingSalon/styles/styles.css' type='text/css'>
+            <script src='/HairdressingSalon/changetable.js'></script>
+        </head>";
+    $table .= '<table><tr><td></td>';
+    $time = 9;
+    
+    for ($i=0; $i < 7; $i++)
+      {
+        $table.="<td>$days[$i]</td>";        
+      }
+
+      $table.='</tr>';
+
+    for($i = 0; $i < 12; $i++)
+    {
+      $table.="<tr><td>" . $time . ":00</td>";
+      $time++;
+      for ($j=0; $j < 7; $j++)
+      {
+        $table.="<td>$data</td>";
+        
+      }
+      $table.='</tr>';
+    }
+    $table.='</table></html>';
+    echo $table;
+  }
 ?>

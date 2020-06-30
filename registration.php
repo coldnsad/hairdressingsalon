@@ -22,7 +22,7 @@ if (isset($_POST['name']) &&
             }
         else
         {
-                $result = queryMysql("SELECT * FROM hairdressingsalon WHERE username='$username'");
+                $result = queryMysql("SELECT * FROM users WHERE username='$username'");
             if ($result->num_rows) $error = 'Пользователь с таким логином уже существует';
             else
             {

@@ -34,7 +34,8 @@
   function getTable()
   {
     $days = [1,2,3,4,5,6,7];
-    $data = '<select  id="data-cells" onChange = "selected();">
+    $data = '<select  id="data-cells" onChange = "selected(event);">
+                <option>Выберите услугу</option>
                 <option>Услуга 1</option>
                 <option>Услуга 2</option>
                 <option>Услуга 3</option>

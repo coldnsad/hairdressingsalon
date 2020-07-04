@@ -39,14 +39,14 @@
                 <option>Услуга 1</option>
                 <option>Услуга 2</option>
                 <option>Услуга 3</option>
-              <select>';
+              </select>';
     $table = "<!DOCTYPE html>
     <html>
         <head>
             <link rel='stylesheet' href='/HairdressingSalon/styles/styles.css' type='text/css'>
             <script src='/HairdressingSalon/changetable.js'></script>
         </head>";
-    $table .= '<table><tr><td></td>';
+    $table .= '<table id="shedule"><tr><td></td>';
     $time = 9;
     
     for ($i=0; $i < 7; $i++)

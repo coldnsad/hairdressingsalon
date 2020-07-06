@@ -98,14 +98,16 @@ a.service-list{
 }
 
 .model-left{
-    width: 370px;
+    width: 100%;
+    /* width: 370px; */
     height: 475px;
     margin-top: 20px;
 }
 
 .model-right{
     margin-top: 0;
-    width: 360px;
+    /* width: 360px; */
+    width: 100%;
 }
 
 .center-header{
@@ -230,9 +232,12 @@ footer div{
     clear: both;
 }
 
-table{
-    width: 700px;
+.table-shedule{
+    max-width: 1000px;
+    width: 50%;
     height: 700px;
+    margin: 10px auto 20px auto;
+    /* margin: 70px 100px 50px 0; */
     border-collapse: collapse;    
 }
 

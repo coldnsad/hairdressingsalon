@@ -10,5 +10,5 @@ function redirectToRegistration()
 
 function toHome()
 {
-    window.location = "http://localhost/HairdressingSalon/index.html";
+    window.location = "http://localhost/HairdressingSalon/index.php";
 }

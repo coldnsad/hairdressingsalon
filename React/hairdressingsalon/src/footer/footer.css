@@ -1,0 +1,47 @@
+footer div{
+    height: 110px;
+    /* height: 15%; */
+}
+
+.footer-left{
+    background-color: #F6A19D; 
+}
+
+.footer-center{
+    background-color: #F6A19D; 
+}
+
+.footer-right{
+    background-color: #F6A19D; 
+}
+
+.contacts {
+    position: relative;
+}
+
+.contact-info{
+    font-family: Helvetica, Arial, sans-serif;
+    color: #ffff;
+    font-size: 20px;
+}
+   
+.email{
+    position: absolute;
+    bottom: 80px;
+    left: 40px;
+}
+.phone{
+    position: absolute;
+    bottom: 45px;
+    left:40px;
+}
+.insta{
+    position: absolute;
+    bottom: 12px;
+    left:40px;
+}
+
+.footer-center-text{
+    color: #ffff;
+}
+

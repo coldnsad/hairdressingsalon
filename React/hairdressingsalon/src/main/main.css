@@ -1,0 +1,153 @@
+* {margin: 0; padding: 0}
+
+html, body {overflow-y:hidden}
+
+.wrap {
+    width: 100%;
+    max-width: 1200px;    
+    margin: 0 auto;
+}
+
+.left{
+    width: 30%;
+    float: left;
+    background: #F0F5B5;
+    /* border: 2px solid white; */
+    color: #000000;
+}
+
+.center{
+    width: 35%;
+    float: left;
+    background: #F0F5B5;
+    /* border: 2px solid white; */
+    color: #000000;
+}
+
+.right{
+    width: 30%;
+    float: left;
+    background: #F0F5B5;
+    /* border: 2px solid white; */
+    color: #000000;
+}
+
+main div{
+    height: 719px;
+    /* height: 70%; */
+}
+
+.main-left{
+    background: #F6A19D;
+}
+
+.main-center{
+    background: #ffff;
+}
+
+.main-right{
+    background: #ffff;
+    position: relative;
+}
+
+.service-list{
+    font-family: Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    font-size: 21px;
+    margin: 15px 0 0 65px;
+}
+
+.service-list li{
+    padding: 5px 0;
+}
+
+a.service-list{
+    padding-left: 0;
+    font-size: 15px;
+    padding-left: 150px;
+    text-decoration: none;
+}
+
+.model-left{
+    width: 100%;
+    /* width: 370px; */
+    height: 475px;
+    margin-top: 20px;
+}
+
+.model-right{
+    margin-top: 0;
+    /* width: 360px; */
+    width: 100%;
+}
+
+.center-header{
+    font-size: 34px;
+    text-decoration: underline;
+    padding: 100px 0 50px 0;
+    font-weight: bold;    
+}
+
+.center-text{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    color: #F6A19D;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.clock-text{
+    padding: 1px 0 50px 0;
+    text-decoration: underline; 
+}
+
+.filler{
+    border-bottom: 5px dotted #F6A19D;
+    height: 0;
+    padding-top: 50px;
+}
+
+.filler-right{
+    padding-top: 0px;
+}
+
+.logo{
+    height: 77px;
+    width: 72px;
+    padding-top: 20px;
+}
+
+.line{
+    height: 10px;
+    background: #F6A19D;
+    margin-top: -7px;
+}
+
+.logo-right{
+    height: 100px;
+    width: 100px;
+    border: 13px solid #F6A19D;
+    border-radius: 50%;
+    background: #ffff;
+    position: absolute;
+    z-index: 1;
+    margin-left: 120px;
+    bottom: 25%;
+}
+
+div.logo-right img {
+    padding-top: 0;
+    position: absolute;
+    left: 14px;
+    bottom: 10px;
+}
+.right-header {
+    font-size: 96px;
+    color: #F6A19D;
+    font-weight: bold;
+}
+
+.right-text {    
+    line-height: 1.4;
+    padding-top: 15%;
+}
